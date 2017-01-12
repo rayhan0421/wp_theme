@@ -1,0 +1,39 @@
+https://codex.wordpress.org/Function_Reference/register_nav_menus
+
+https://codex.wordpress.org/Navigation_Menus
+
+in functions.php
+
+register_nav_menus( array(
+	'pluginbuddy_mobile' => 'PluginBuddy Mobile Navigation Menu',
+	'footer_menu' => 'My Custom Footer Menu',
+) );
+
+
+Use wp_nav_menu() to display your custom menu.
+
+
+Display Menus on Theme:
+--------------------
+<?php wp_nav_menu( array( 'theme_location' => 'footer_menu' ) ); ?>
+or for css
+wp_nav_menu( array( 'theme_location' => 'footer_menu', 'container_class' => 'my_extra_menu_class' ) );
+
+
+
+...............................
+
+
+other way / standard way
+
+// just add function and use add_action to initialize
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
