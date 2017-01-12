@@ -1,0 +1,9 @@
+index.php
+404.php
+archive.php
+search.php
+comments-popup.php
+
+home.php
+page.php
+single.php
