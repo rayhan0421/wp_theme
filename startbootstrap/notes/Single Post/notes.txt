@@ -1,0 +1,3 @@
+single.php – WordPress  falls back to single.php. if not exist
+singular.php – Then it falls back to singular.php. if not exist
+index.php – Finally, as mentioned above, WordPress ultimately falls back to index.php.

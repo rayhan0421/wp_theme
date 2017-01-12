@@ -1,3 +1,9 @@
 if we need static fron page 
 
 make front-page.php (page is not recommended. very very basic tricks. not dynamic)
+
+.......
+If front-page.php exists, it will override the home.php template.
+
+ If the front-page.php file does not exist,
+ WordPress will either use the home.php or page.php files depending on the setup in Settings ? Reading

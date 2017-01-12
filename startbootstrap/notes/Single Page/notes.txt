@@ -1,0 +1,5 @@
+The template file used to render a static page (page post-type)
+custom template file – The page template assigned to the page. See || get_page_templates().||
+page.php
+singular.php (if not exist page.php)
+ index.php (if not exist singular.php)
