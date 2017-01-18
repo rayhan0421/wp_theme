@@ -5,7 +5,10 @@
 			<div class="overlay">
 				<div class="container">
 					<h1 class="title">Blog index</h1>
-				</div><!-- /.container -->
+
+
+
+                </div><!-- /.container -->
 			</div><!-- /.overlay -->
 		</section><!-- /#slider -->
 		<!-- Slider Section End -->

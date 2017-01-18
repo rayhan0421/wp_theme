@@ -1,5 +1,5 @@
 
-		<?php get_header();?>
+		<?php get_header();?>	<?php get_header();?>
 		<?php 
 			/*
 				Template Name:Contact Page
@@ -10,6 +10,11 @@
 			<div class="overlay">
 				<div class="container">
 					<h1 class="title">Contact page</h1>
+                    <p>
+
+
+
+                    </p>
 				</div><!-- /.container -->
 			</div><!-- /.overlay -->
 		</section><!-- /#slider -->
@@ -21,7 +26,10 @@
 				<div class="col-md-7">
 					<form action="#" method="post">
 						<h3>Get In Tech</h3>
-
+                         <p>    <?php while ( have_posts() ) : the_post(); ?>
+                                 <?php get_template_part( 'content', 'page' ); ?>
+                                 <?php comments_template( '', true ); ?>
+                             <?php endwhile; // end of the loop. ?></p>
 						<p>Duis sed odio sit am et nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.	aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
 
 						<div class="box">

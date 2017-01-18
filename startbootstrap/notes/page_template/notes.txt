@@ -1,2 +1,7 @@
  Important! Do not use page- as a prefix, as WordPress will interpret the file as a specialized template, 
 meant to apply to only one page on your site.
+
+.............
+If no page templates are assigned to a page and no templates match the page slug or ID of the page,
+then WordPress will use the default page template page.php.
+ And if no page.php template exists, it will use index.php.
