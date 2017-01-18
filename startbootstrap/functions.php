@@ -1,7 +1,7 @@
 <?php
 require_once ("inc/custom_post.php");
 
-
+add_theme_support( 'post-thumbnails' );
 
 function start_bootstrap_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
