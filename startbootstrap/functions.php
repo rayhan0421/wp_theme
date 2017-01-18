@@ -1,4 +1,6 @@
 <?php
+require_once ("inc/custom_post.php");
+
 
 
 function start_bootstrap_scripts() {
