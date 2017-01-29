@@ -3,5 +3,5 @@ meant to apply to only one page on your site.
 
 .............
 If no page templates are assigned to a page and no templates match the page slug or ID of the page,
-then WordPress will use the default page template page.php.
- And if no page.php template exists, it will use index.php.
+then WordPress will use the default page template page.php.  ***
+ And if no page.php template exists, it will use index.php.   ***

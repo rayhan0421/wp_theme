@@ -1,0 +1,32 @@
+https://codex.wordpress.org/Function_Reference/register_sidebars
+register sidebar:
+
+in functions.php 
+
+ $args = array(
+	'name'          => __('Sidebar %d'),
+        'id'            => 'sidebar',          
+	'description'   => '',
+	'class'         => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
+
+<?php register_sidebars( $number, $args ); ?> 
+
+
+
+
+Usage:  in frontend page (index/template/page/single/author.php)
+https://codex.wordpress.org/Function_Reference/dynamic_sidebar
+
+<?php dynamic_sidebar( $index ); ?> 
+or 
+<?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
+	<ul id="sidebar">
+		<?php dynamic_sidebar( 'left-sidebar' ); ?>
+	</ul>
+<?php endif; ?>
+
+

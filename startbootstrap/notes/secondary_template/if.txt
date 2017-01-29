@@ -1,4 +1,4 @@
-if we need static fron page 
+if we need static front page 
 
 make front-page.php (page is not recommended. very very basic tricks. not dynamic)
 
