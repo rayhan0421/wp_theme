@@ -1,0 +1,3 @@
+You use home.php to customize posts index.
+
+You use index.php to provide the most generic template in your theme, suitable for display of anything.

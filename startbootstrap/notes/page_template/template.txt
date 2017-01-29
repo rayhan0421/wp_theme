@@ -1,0 +1,9 @@
+https://developer.wordpress.org/themes/template-files-section/page-templates/
+
+create a page something.php
+then 
+
+<?php /* Template Name: Example Template */ ?>
+
+
+

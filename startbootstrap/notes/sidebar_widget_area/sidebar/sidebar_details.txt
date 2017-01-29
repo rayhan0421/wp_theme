@@ -1,0 +1,39 @@
+Arguments for dynamic_sidebar()
+
+The register_sidebar() function accepts a single parameter named $args. $args is an array of arguments that define how the sidebar and its widgets should be handled.
+
+
+id: The id argument is the most important argument you can set for your sidebar. This unique ID will be used to assign widgets to a specific sidebar, and to call sidebar in your template. Each ID should be unique to the sidebar and must be in lowercase with no spaces in between. By default, WordPress sets this to sidebar-$i (where $i is a count of the registered sidebars).
+
+
+name: The name argument is the human-readable label for your sidebar used in the WordPress admin. Don’t make this name random and use proper name that you think best represents the name of your sidebar. It can be internationalized with __() function where the first parameter is the name and second parameter is theme textdomain.
+
+
+description: The description argument is the human-readable description for your sidebar used in the WordPress admin. It allows you to set a specific description for how the sidebar is used within your theme. This argument defaults to an empty string. It can be internationalized with __() function where the first parameter is the description and second parameter is theme textdomain.
+
+
+before_widget: The before_widget argument is a wrapper HTML element for widgets assigned to the sidebar. This argument has a couple of things that you should always set with specific code so that plugins can properly use them, which is the id (%1$s) and class (%2$s) attributes.
+
+
+after_widget: The after_widget argument is a closing wrapper HTML element for widgets assigned to the sidebar. You just need to close off the element you set for the before_widget argument.
+
+
+before_title: Most widgets display a title if the user sets one. The before_title argument is the opening wrapper HTML element for the sidebar’s widget titles.
+
+
+after_title: The after_title argument is to close the wrapper HTML element set in the before_title argument.
+
+=======================------------------------------------------------
+Displaying Dynamic Sidebars:
+---------------------------------------
+
+After completing the process of registering sidebar, you will need to call dynamic_sidebar() function to display it in your WordPress theme. 
+The dynamic_sidebar() function takes a single parameter of $index, 
+which can either be the sidebar’s id or name argument that you have set while registering sidebar. 
+The best and safer was to call sidebar with id argument.
+
+The WordPress Twenty Thirteen theme uses the below code in sidebar-main.php file to display sidebar-1 sidebar. 
+The following code uses a wrapper element so that the sidebar can be easily styled with CSS. 
+Note dynamic_sidebar() can technically be called anywhere within your theme.
+
+

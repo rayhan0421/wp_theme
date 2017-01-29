@@ -1,0 +1,18 @@
+Sidebar templates are typically a php file where the code for a dynamic sidebar are added. Most of the WordPress theme has a single sidebar template file called sidebar.php. But you have more template files. For example: Twenty Thirteen theme uses two sidebar template files called sidebar.php and sidebar-main.php, where dynamic sidebar sidebar-1 code is added in sidebar-main.php and sidebar-2 code is added in sidebar.php file.
+
+Now, you have to use get_sidebar( $name ); function to loads both of these sidebar templates. In Twenty Thirteen theme used the following functions to load both of the sidebar template.
+
+:::
+<?php 
+//Loading sidebar.php file
+get_sidebar(); 
+?>
+ 
+<?php 
+//Loading sidebar-main.php file
+get_sidebar( 'main' ); ?>
+
+notes:
+Sidebar templates don’t actually have to display dynamic sidebars. 
+They can technically contain custom-coded content that displays anything. 
+At the same time, you can display a dynamic sidebar in any template file you like.
