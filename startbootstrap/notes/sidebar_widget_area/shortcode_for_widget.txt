@@ -1,0 +1,11 @@
+https://developer.wordpress.org/plugins/shortcodes/basic-shortcodes/
+
+function caption_shortcode( $atts, $content = null ) {
+	return '<span class="caption">' . $content . '</span>';
+}
+add_shortcode( 'caption', 'caption_shortcode' );
+
+
+
+When used like this:
+[caption]My Caption[/caption]
