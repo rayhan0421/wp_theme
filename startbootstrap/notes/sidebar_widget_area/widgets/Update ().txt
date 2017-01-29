@@ -1,0 +1,15 @@
+When you click on the save button on widget form, then predefined function update() is called.
+
+This function overwrite the old value of form fields with a new value. As you can see in the below code I have used two fields in the form, so these two fields keep on updating with new valid values in backend.
+==============================
+<?php
+
+function update($new_instance, $old_instance) {
+$instance = $old_instance;
+// Fields
+$instance['title'] = strip_tags($new_instance['title']);
+$instance['textarea'] = strip_tags($new_instance['textarea']);
+return $instance;
+}
+
+?>

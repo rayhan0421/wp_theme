@@ -1,0 +1,1 @@
+Note : You must use get_field_name() and get_field_id() function to generate form element name and id.

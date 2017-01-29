@@ -1,0 +1,3 @@
+When you're ready you can display that Widget Area by inserting the following code into whichever Theme file you desire:
+
+<?php if ( dynamic_sidebar('example_widget_area_name') ) : else : endif; ?>
