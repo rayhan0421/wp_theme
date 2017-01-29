@@ -1,0 +1,9 @@
+author.php
+catagory.php
+
+texonomy.php
+date.php
+tag.php
+attachment.php
+
+single-post.php

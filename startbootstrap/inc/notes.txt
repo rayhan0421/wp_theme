@@ -1,0 +1,1 @@
+must include custom_post.php in functions.php because wp knows only index.php css.style and functions.php .

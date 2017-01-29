@@ -1,0 +1,11 @@
+register_sidebar( array(
+    'id'          => 'top-menu',
+    'name'        => __( 'Top Menu', $text_domain ),
+    'description' => __( 'This sidebar is located above the age logo.', $text_domain ),
+) );
+
+
+usage:
+dynamic_sidebar( 'top-menu' ) // in front page
+
+This allows the use of dynamic_sidebar( 'top-menu' ) which uses an ID and is readable.
